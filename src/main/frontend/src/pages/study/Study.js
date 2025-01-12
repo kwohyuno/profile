@@ -6,7 +6,7 @@ import './Study.css';
 
 function Study(props){
     const navi = useNavigate();
-    const [modalOpenStates, setModalOpenStates] = useState([false, false, false, false]);
+    const [modalOpenStates, setModalOpenStates] = useState([false, false, false, false, false, false, false]);
 
     const openModal = (index) => {
         const newStates = [...modalOpenStates];
@@ -28,6 +28,14 @@ function Study(props){
             <div className="study-body">
                 <h1>My Study</h1>
                 <ul>
+                    <li style={{cursor: 'pointer'}} onClick={() => openModal(6)}>
+                        <h3>NoSQL, Big Data, and Spark Foundations Specialization</h3>
+                        <p>Online Course of Coursera</p>
+                    </li>
+                    <li style={{cursor: 'pointer'}} onClick={() => openModal(5)}>
+                        <h3>Batch Processing with SpringBoot</h3>
+                        <p>Online Course of Fast Campus</p>
+                    </li>
                     <li style={{cursor: 'pointer'}} onClick={() => openModal(0)}>
                         <h3>CS 601 - Principles of Software Development</h3>
                         <p>MSCS Course in University of San Francisco</p>
@@ -192,6 +200,49 @@ function Study(props){
                         <br/>
                         <a style={{color: "blue", cursor: "pointer"}}
                            href="https://fastcampus.co.kr/classroom/233813">link</a>
+                        <br/>
+                    </div>
+                </div>
+            )}
+
+            {modalOpenStates[5] && (
+                <div className="modal">
+                    <div className="modal-content">
+                        <span className="modal-close" onClick={() => closeModal(5)}>&times;</span>
+                        <h2>Batch Processing</h2>
+                        <div className="modal-content-li">
+                            <br/>
+                            <li>Multithreading with Future</li>
+                            <br/>
+                            <li>Using JPA for batch processing</li>
+                        </div>
+                        <br/>
+                        <a style={{color: "blue", cursor: "pointer"}}
+                           href="https://github.com/kwohyuno/pass-batch">link</a>
+                        <br/>
+                    </div>
+                </div>
+            )}
+
+            {modalOpenStates[6] && (
+                <div className="modal">
+                    <div className="modal-content">
+                        <span className="modal-close" onClick={() => closeModal(6)}>&times;</span>
+                        <h2>NoSQL, Big Data, and Spark Foundations Specialization</h2>
+                        <div className="modal-content-li">
+                            <br/>
+                            <li>Introduction to NoSQL Databases
+                            </li>
+                            <br/>
+                            <li>Introduction to Big Data with Spark and Hadoop
+                            </li>
+                            <br/>
+                            <li>Machine Learning with Apache Spark
+                            </li>
+                        </div>
+                        <br/>
+                        <a style={{color: "blue", cursor: "pointer"}}
+                           href="https://www.coursera.org/specializations/nosql-big-data-and-spark-foundations">link</a>
                         <br/>
                     </div>
                 </div>

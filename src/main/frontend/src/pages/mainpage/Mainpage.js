@@ -100,13 +100,12 @@ function Mainpage(props){
                 <div className="mainpage-body-contents">
                     <div className="mainpage-body-contents-introduction">
                         <h4>
-                            Hi, I am Jake. I started my IT career at AWS Korea in 2020 as sales team intern.
-                            But I wanted to understand deeply about customer's needs so I started to
-                            study Computer Science. Now, I myself became a Software Engineer to solve problems
-                            and drive real impact with IT products.
-                            <br/><br/>
-                            I will devote myself to understand business and technical challenges company is facing with
-                            and solve the problems with corresponding technology.
+                            Hi, I am Jake, a versatile Software Engineer with a comprehensive skill set spanning Full Stack
+                            development (Frontend, Backend, DevOps, Data, and AI). I am passionate about building impactful
+                            products that drive business success. I demonstrated strong technical expertise and effective
+                            collaboration in various projects in AWS and FPT. Always committed to continuous improvement and dedicated
+                            to contributing to team success by delivering exceptional results.
+
                             <br/><br/>
                             I am now studying in University of San Francisco, focusing on AI and Computer Science.
                             <br/><br/>
@@ -119,27 +118,27 @@ function Mainpage(props){
                     <h2>Education & Work Experience</h2>
                     <ul>
                         <li style={{cursor: 'pointer'}} onClick={() => openModal(0)}>
-                            <h3>University of San Francisco (2024.8 - 2026.5)</h3>
+                            <h3>University of San Francisco (08.2024 - 05.2026)</h3>
                             Masters of Science, Computer Science
                         </li>
                         <li style={{cursor: 'pointer'}} onClick={() => openModal(1)}>
-                            <h3>FPT Software (2023.9 - 2024.3)</h3>
+                            <h3>FPT Software (09.2023 - 03.2024)</h3>
                             Software Engineer
                         </li>
                         <li style={{cursor: 'pointer'}} onClick={() => openModal(5)}>
-                            <h3>Naver Cloud AIaaS Developer Bootcamp (2023.2 - 2023.8)</h3>
+                            <h3>Naver Cloud AIaaS Developer Bootcamp (02.2023 - 08.2023)</h3>
                             Full-stack developer bootcamp
                         </li>
                         <li style={{cursor: 'pointer'}} onClick={() => openModal(4)}>
-                            <h3>Cyber University of Korea (2022.3 - 2024.2)</h3>
+                            <h3>Cyber University of Korea (03.2022 - 02.2024)</h3>
                             Bachelors in Engineering, Software Engineering
                         </li>
                         <li style={{cursor: 'pointer'}} onClick={() => openModal(2)}>
-                            <h3>Amazon Web Services Korea (2020.7 - 2022.12)</h3>
+                            <h3>Amazon Web Services Korea (07.2020 - 12.2022)</h3>
                             Cloud Sales
                         </li>
                         <li style={{cursor: 'pointer'}} onClick={() => openModal(3)}>
-                            <h3>Seoul National University (2013.3 - 2020.8)</h3>
+                            <h3>Seoul National University (03.2013 - 08.2020)</h3>
                             Physical Education & Consumer Science
                         </li>
                     </ul>

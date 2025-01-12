@@ -6,6 +6,11 @@
     text-align: center;
 }
 
+.main-nav{
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
 .main-nav button {
     background-color: #fdfdfd;
     border: none;
