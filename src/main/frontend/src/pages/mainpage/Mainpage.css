@@ -51,6 +51,10 @@ header h1 {
 
 }
 
+.mainpage-body-left{
+    margin-left:8rem;
+}
+
 
 .mainpage-body img.mainpage-body-profileimg {
     margin-left:-28rem;
@@ -310,7 +314,7 @@ ul li:hover h3 {
     padding: 2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-in-out;
-    max-width: 800px; /* 최대 크기 제한 */
+    max-width: 630px; /* 최대 크기 제한 */
     width: 100%; /* 반응형 적용 */
 }
 

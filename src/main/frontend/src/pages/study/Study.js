@@ -52,10 +52,10 @@ function Study(props){
                         <h3>Large Traffic Handling Course</h3>
                         <p>Fast Campus</p>
                     </li>
-                    <li style={{cursor: 'pointer'}} onClick={() => openModal(3)}>
-                        <h3>AWS Associate Solutions Architect</h3>
-                        <p>AWS Certificate</p>
-                    </li>
+                    {/*<li style={{cursor: 'pointer'}} onClick={() => openModal(3)}>*/}
+                    {/*    <h3>AWS Associate Solutions Architect</h3>*/}
+                    {/*    <p>AWS Certificate</p>*/}
+                    {/*</li>*/}
                 </ul>
             </div>
 
@@ -167,24 +167,24 @@ function Study(props){
                 </div>
             )}
 
-            {/* Modal 4 */}
-            {modalOpenStates[3] && (
-                <div className="modal">
-                    <div className="modal-content">
-                        <span className="modal-close" onClick={() => closeModal(3)}>&times;</span>
-                        <h2>AWS Associate Solutions Architect Certificate</h2>
-                        <br/>
-                        <div className="modal-content-li">
-                            <li>AWS Certified Solutions Architect - Associate is focused on the design of cost and performance optimized solutions. This is an ideal starting point for candidates with AWS Cloud or strong on-premises IT experience.
-                            </li>
-                            <br/>
-                            <a style={{color: "blue", cursor: "pointer"}}
-                               href="https://aws.amazon.com/certification/certified-solutions-architect-associate/">link</a>
-                            <br/>
-                        </div>
-                    </div>
-                </div>
-            )}
+            {/*/!* Modal 4 *!/*/}
+            {/*{modalOpenStates[3] && (*/}
+            {/*    <div className="modal">*/}
+            {/*        <div className="modal-content">*/}
+            {/*            <span className="modal-close" onClick={() => closeModal(3)}>&times;</span>*/}
+            {/*            <h2>AWS Associate Solutions Architect Certificate</h2>*/}
+            {/*            <br/>*/}
+            {/*            <div className="modal-content-li">*/}
+            {/*                <li>AWS Certified Solutions Architect - Associate is focused on the design of cost and performance optimized solutions. This is an ideal starting point for candidates with AWS Cloud or strong on-premises IT experience.*/}
+            {/*                </li>*/}
+            {/*                <br/>*/}
+            {/*                <a style={{color: "blue", cursor: "pointer"}}*/}
+            {/*                   href="https://aws.amazon.com/certification/certified-solutions-architect-associate/">link</a>*/}
+            {/*                <br/>*/}
+            {/*            </div>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*)}*/}
 
             {modalOpenStates[4] && (
                 <div className="modal">
