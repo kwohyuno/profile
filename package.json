@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
@@ -41,5 +42,9 @@
       "last 1 safari version"
     ],
     "homepage": "https://kwohyuno.github.io/my-react-app"
+=======
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+>>>>>>> 52c7588 (fixed career, and project)
   }
 }
