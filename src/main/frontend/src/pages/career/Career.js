@@ -54,7 +54,7 @@ function Career(props){
                     <div className="modal-content">
                         <span className="modal-close" onClick={() => closeModal(0)}>&times;</span>
                         <h2>AI Research Assistant</h2>
-                        <h4> University of San Francisco, Information Technology Service Division | Jan 2025 - TBU</h4>
+                        <h4> University of San Francisco, Information Technology Service Division | Jan 2025 - Present</h4>
                         <li>Developed and optimized an AI agent prototype, increasing task efficiency by 900% through iterative performance tuning and user-driven refinements.</li>
 
                         <li>Conducted a comparative analysis of AI agent frameworks (Azure OpenAI, CrewAI, OpenAI Agent, Manus, BeamAI), identifying a framework that reduced operational costs by 30% while improving accuracy by 15%.
