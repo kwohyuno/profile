@@ -6,7 +6,7 @@ import './Study.css';
 
 function Study(props){
     const navi = useNavigate();
-    const [modalOpenStates, setModalOpenStates] = useState([false, false, false, false, false, false, false]);
+    const [modalOpenStates, setModalOpenStates] = useState([false, false, false, false, false, false, false, false, false, false, false, false, false]);
 
     const openModal = (index) => {
         const newStates = [...modalOpenStates];
@@ -28,6 +28,30 @@ function Study(props){
             <div className="study-body">
                 <h1>My Study</h1>
                 <ul>
+                    <li style={{cursor: 'pointer'}} onClick={() => openModal(12)}>
+                        <h3>Stanford ML Basics</h3>
+                        <p>Stanford YouTube</p>
+                    </li>
+                    <li style={{cursor: 'pointer'}} onClick={() => openModal(11)}>
+                        <h3>System Design Study Group</h3>
+                        <p>Bay Area K-Group</p>
+                    </li>
+                    <li style={{cursor: 'pointer'}} onClick={() => openModal(10)}>
+                        <h3>CS 686 DevOps</h3>
+                        <p>University of San Francisco</p>
+                    </li>
+                    <li style={{cursor: 'pointer'}} onClick={() => openModal(9)}>
+                        <h3>CS563 Foundations of AI</h3>
+                        <p>University of San Francisco</p>
+                    </li>
+                    <li style={{cursor: 'pointer'}} onClick={() => openModal(8)}>
+                        <h3>CS545 Data Structure and Algorithm</h3>
+                        <p>University of San Francisco</p>
+                    </li>
+                    <li style={{cursor: 'pointer'}} onClick={() => openModal(7)}>
+                        <h3>Java BackEnd Online Course</h3>
+                        <p>Online Course at Inflearn</p>
+                    </li>
                     <li style={{cursor: 'pointer'}} onClick={() => openModal(6)}>
                         <h3>NoSQL, Big Data, and Spark Foundations Specialization</h3>
                         <p>Online Course of Coursera</p>
@@ -243,6 +267,150 @@ function Study(props){
                         <br/>
                         <a style={{color: "blue", cursor: "pointer"}}
                            href="https://www.coursera.org/specializations/nosql-big-data-and-spark-foundations">link</a>
+                        <br/>
+                    </div>
+                </div>
+            )}
+
+            {/* New Modal 7 */}
+            {modalOpenStates[7] && (
+                <div className="modal">
+                    <div className="modal-content">
+                        <span className="modal-close" onClick={() => closeModal(7)}>&times;</span>
+                        <h2>Java BackEnd Online Course</h2>
+                        <div className="modal-content-li">
+                            <br/>
+                            <li>Spring Boot Framework</li>
+                            <br/>
+                            <li>RESTful API Development</li>
+                            <br/>
+                            <li>Database Integration</li>
+                            <br/>
+                            <li>Security Implementation</li>
+                        </div>
+                        <br/>
+                        <a style={{color: "blue", cursor: "pointer"}}
+                           href="https://www.inflearn.com/">link</a>
+                        <br/>
+                    </div>
+                </div>
+            )}
+
+            {/* New Modal 8 */}
+            {modalOpenStates[8] && (
+                <div className="modal">
+                    <div className="modal-content">
+                        <span className="modal-close" onClick={() => closeModal(8)}>&times;</span>
+                        <h2>CS545 Data Structure and Algorithm</h2>
+                        <div className="modal-content-li">
+                            <br/>
+                            <li>Advanced Data Structures</li>
+                            <br/>
+                            <li>Algorithm Analysis</li>
+                            <br/>
+                            <li>Sorting and Searching Algorithms</li>
+                            <br/>
+                            <li>Graph Algorithms</li>
+                        </div>
+                        <br/>
+                        <a style={{color: "blue", cursor: "pointer"}}
+                           href="#">link</a>
+                        <br/>
+                    </div>
+                </div>
+            )}
+
+            {/* New Modal 9 */}
+            {modalOpenStates[9] && (
+                <div className="modal">
+                    <div className="modal-content">
+                        <span className="modal-close" onClick={() => closeModal(9)}>&times;</span>
+                        <h2>CS563 Foundations of AI</h2>
+                        <div className="modal-content-li">
+                            <br/>
+                            <li>Machine Learning Fundamentals</li>
+                            <br/>
+                            <li>Neural Networks and Deep Learning</li>
+                            <br/>
+                            <li>Natural Language Processing</li>
+                            <br/>
+                            <li>Computer Vision</li>
+                        </div>
+                        <br/>
+                        <a style={{color: "blue", cursor: "pointer"}}
+                           href="#">link</a>
+                        <br/>
+                    </div>
+                </div>
+            )}
+
+            {/* New Modal 10 */}
+            {modalOpenStates[10] && (
+                <div className="modal">
+                    <div className="modal-content">
+                        <span className="modal-close" onClick={() => closeModal(10)}>&times;</span>
+                        <h2>CS 686 DevOps</h2>
+                        <div className="modal-content-li">
+                            <br/>
+                            <li>Continuous Integration/Continuous Deployment (CI/CD)</li>
+                            <br/>
+                            <li>Containerization with Docker</li>
+                            <br/>
+                            <li>Kubernetes Orchestration</li>
+                            <br/>
+                            <li>Infrastructure as Code</li>
+                        </div>
+                        <br/>
+                        <a style={{color: "blue", cursor: "pointer"}}
+                           href="#">link</a>
+                        <br/>
+                    </div>
+                </div>
+            )}
+
+            {/* New Modal 11 */}
+            {modalOpenStates[11] && (
+                <div className="modal">
+                    <div className="modal-content">
+                        <span className="modal-close" onClick={() => closeModal(11)}>&times;</span>
+                        <h2>System Design Study Group</h2>
+                        <div className="modal-content-li">
+                            <br/>
+                            <li>Scalable System Architecture</li>
+                            <br/>
+                            <li>Database Design and Optimization</li>
+                            <br/>
+                            <li>Load Balancing and Caching Strategies</li>
+                            <br/>
+                            <li>Microservices Architecture</li>
+                        </div>
+                        <br/>
+                        <a style={{color: "blue", cursor: "pointer"}}
+                           href="#">link</a>
+                        <br/>
+                    </div>
+                </div>
+            )}
+
+            {/* New Modal 12 */}
+            {modalOpenStates[12] && (
+                <div className="modal">
+                    <div className="modal-content">
+                        <span className="modal-close" onClick={() => closeModal(12)}>&times;</span>
+                        <h2>Stanford ML Basics</h2>
+                        <div className="modal-content-li">
+                            <br/>
+                            <li>Supervised Learning</li>
+                            <br/>
+                            <li>Unsupervised Learning</li>
+                            <br/>
+                            <li>Linear Regression and Classification</li>
+                            <br/>
+                            <li>Neural Networks and Deep Learning</li>
+                        </div>
+                        <br/>
+                        <a style={{color: "blue", cursor: "pointer"}}
+                           href="https://www.youtube.com/@stanfordonline">link</a>
                         <br/>
                     </div>
                 </div>

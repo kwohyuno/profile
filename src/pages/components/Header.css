@@ -6,12 +6,11 @@
     text-align: center;
 }
 
-.main-nav{
-    margin-top:12px;
+.main-nav {
+    margin-top: 12px;
 }
 
 .main-nav button {
-    /*background-color: #fdfdfd;*/
     border: none;
     padding: 10px 20px;
     margin: 5px;
@@ -26,17 +25,78 @@
 }
 
 .main-nav button:hover {
-    color:white;
+    color: white;
 }
 
-/*.main-nav button:active {*/
-/*    background-color: #0e90d2;*/
-/*}*/
-
-.main-header-btn{
-    width:12rem;
-    font-style:italic;
+.main-header-btn {
+    width: 12rem;
+    font-style: italic;
     background-color: #4b86fa;
     color: #e6e6e6;
     font-weight: bold;
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+    .main-header {
+        padding: 15px;
+    }
+    
+    .main-nav {
+        margin-top: 10px;
+    }
+    
+    .main-nav button {
+        padding: 8px 15px;
+        margin: 3px;
+        font-size: 16px;
+    }
+    
+    .main-header-btn {
+        width: 10rem;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-header {
+        padding: 10px;
+    }
+    
+    .main-nav {
+        margin-top: 8px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+    
+    .main-nav button {
+        padding: 6px 12px;
+        margin: 2px;
+        font-size: 14px;
+        min-width: 80px;
+    }
+    
+    .main-header-btn {
+        width: 8rem;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 360px) {
+    .main-header {
+        padding: 8px;
+    }
+    
+    .main-nav button {
+        padding: 5px 10px;
+        font-size: 12px;
+        min-width: 70px;
+    }
+    
+    .main-header-btn {
+        width: 7rem;
+        font-size: 11px;
+    }
 }

@@ -46,20 +46,12 @@ function Mainpage(props){
                 <div className="mainpage-body-contents">
                     <div className="mainpage-body-contents-introduction">
                         <h4>
-                            Hi, I am Jake, a versatile Software Engineer with a comprehensive skill set spanning Full
-                            Stack
-                            development (Frontend, Backend, DevOps, Data, and AI). I am passionate about building
-                            impactful
-                            products that drive business success. I demonstrated strong technical expertise and
-                            effective
-                            collaboration in various projects in AWS and FPT. Always committed to continuous improvement
-                            and dedicated
-                            to contributing to team success by delivering exceptional results.
-
+                        Hi, I’m Jake — a Full Stack Software Engineer with hands-on AI/ML expertise and a passion for building intelligent, end-to-end systems that drive real-world impact.
+                        I specialize in designing and deploying full-stack applications that integrate AI capabilities, support scalable infrastructure, and enhance user experience. From building interactive analytics dashboards to automating large-scale evaluations with RAG and vector databases, I’ve delivered production-grade systems used by thousands. My experience spans cloud-native DevOps, frontend/backend architecture, and applied AI — all grounded in strong theoretical understanding and a relentless focus on business value.
                             <br/><br/>
-                            I am now studying in University of San Francisco, focusing on AI and Computer Science.
-                            <br/><br/>
-                            <h3 style={{fontStyle: "italic"}}>Lets Work Hard, Have fun, and Make history!</h3>
+                            
+                            
+                            <h3 style={{fontStyle: "italic"}}>Let’s build something meaningful — so we could work hard, have fun, and make history!</h3>
                         </h4>
                     </div>
 

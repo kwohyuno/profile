@@ -24,3 +24,74 @@
     margin: 0;
     padding: 0;
 }
+
+/* === Responsive Design === */
+@media (max-width: 1200px) {
+    .certificate-body {
+        margin-left: 8rem;
+        width: 90%;
+        padding-top: 2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .certificate-body {
+        margin-left: 4rem;
+        width: 85%;
+        padding-top: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .certificate-body {
+        margin-left: 2rem;
+        width: 90%;
+        padding-top: 1rem;
+    }
+    
+    .certificate-body ul li {
+        padding: 12px;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .certificate-body {
+        margin-left: 1rem;
+        width: 95%;
+        padding-top: 0.5rem;
+    }
+    
+    .certificate-body ul li {
+        padding: 10px;
+        margin-top: 0.8rem;
+    }
+    
+    .certificate-body ul li h3 {
+        font-size: 1.1rem;
+    }
+    
+    .certificate-body ul li p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .certificate-body {
+        margin-left: 0.5rem;
+        width: 98%;
+    }
+    
+    .certificate-body ul li {
+        padding: 8px;
+        margin-top: 0.5rem;
+    }
+    
+    .certificate-body ul li h3 {
+        font-size: 1rem;
+    }
+    
+    .certificate-body ul li p {
+        font-size: 0.8rem;
+    }
+}

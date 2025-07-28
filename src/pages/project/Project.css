@@ -1,32 +1,28 @@
-.project-body{
-    margin-left:12rem;
-    width:100rem;
-    padding-top:2.5rem;
+.project-body {
+    margin-left: 12rem;
+    width: 100rem;
+    padding-top: 2.5rem;
 }
 
 .project-body ul li {
-    /*display: flex; !* To align h3 and p properly *!*/
-    /*flex-direction: column; !* Ensure h3 and p stack on top of each other *!*/
-    /*width: 300px; !* Or max-width *!*/
-    margin: 10px auto; /* Center the list item */
+    margin: 10px auto;
     padding: 15px;
     background-color: #f5f5f5;
     border-radius: 8px;
     transition: all 0.3s ease-in-out;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top:1.5rem;
-
+    margin-top: 1.5rem;
 }
 
 .project-body ul li:hover {
-    transform: scale(1.01); /* Slightly enlarge on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+    transform: scale(1.01);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .project-body ul li h3,
 .project-body ul li p {
-    margin: 0; /* Remove margin from h3 and p */
-    padding: 0; /* Remove padding from h3 and p */
+    margin: 0;
+    padding: 0;
 }
 
 .modal-content-li {
@@ -47,23 +43,23 @@
 
 .modal-content {
     background-color: #fff;
-    padding: 30px; /* Adjusted padding to add more space */
+    padding: 30px;
     border-radius: 12px;
     position: relative;
     text-align: left;
-    width: 80%; /* Adjust width (previously it was smaller) */
-    max-width: 1000px; /* Maximum width of the modal */
-    max-height: 80vh; /* Limits the modal to 80% of viewport height */
-    overflow-y: auto; /* Scrolls if content exceeds height */
+    width: 80%;
+    max-width: 1000px;
+    max-height: 80vh;
+    overflow-y: auto;
     animation: fadeIn 0.3s ease;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Adds shadow for depth */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .modal-close {
     position: absolute;
-    top: 20px; /* Moves close button down */
-    right: 20px; /* Moves close button to the right */
-    font-size: 30px; /* Bigger "X" close button */
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
     font-weight: bold;
     cursor: pointer;
 }
@@ -76,6 +72,116 @@
     to {
         opacity: 1;
         transform: scale(1);
+    }
+}
+
+/* === Responsive Design === */
+@media (max-width: 1200px) {
+    .project-body {
+        margin-left: 8rem;
+        width: 90%;
+        padding-top: 2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .project-body {
+        margin-left: 4rem;
+        width: 85%;
+        padding-top: 1.5rem;
+    }
+    
+    .modal-content {
+        width: 90%;
+        padding: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-body {
+        margin-left: 2rem;
+        width: 90%;
+        padding-top: 1rem;
+    }
+    
+    .project-body ul li {
+        padding: 12px;
+        margin-top: 1rem;
+    }
+    
+    .modal-content {
+        width: 95%;
+        padding: 20px;
+        max-height: 90vh;
+    }
+    
+    .modal-close {
+        top: 15px;
+        right: 15px;
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-body {
+        margin-left: 1rem;
+        width: 95%;
+        padding-top: 0.5rem;
+    }
+    
+    .project-body ul li {
+        padding: 10px;
+        margin-top: 0.8rem;
+    }
+    
+    .project-body ul li h3 {
+        font-size: 1.1rem;
+    }
+    
+    .project-body ul li p {
+        font-size: 0.9rem;
+    }
+    
+    .modal-content {
+        width: 98%;
+        padding: 15px;
+        max-height: 95vh;
+    }
+    
+    .modal-close {
+        top: 10px;
+        right: 10px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 360px) {
+    .project-body {
+        margin-left: 0.5rem;
+        width: 98%;
+    }
+    
+    .project-body ul li {
+        padding: 8px;
+        margin-top: 0.5rem;
+    }
+    
+    .project-body ul li h3 {
+        font-size: 1rem;
+    }
+    
+    .project-body ul li p {
+        font-size: 0.8rem;
+    }
+    
+    .modal-content {
+        padding: 10px;
+    }
+    
+    .modal-close {
+        top: 8px;
+        right: 8px;
+        font-size: 18px;
     }
 }
 
