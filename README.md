@@ -1,70 +1,175 @@
-# Getting Started with Create React App
+# Jake Hyunoh Kwon - Personal Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack personal portfolio website showcasing Jake Hyunoh Kwon's professional experience, education, projects, and achievements. This project combines a React frontend with a Spring Boot backend to create a comprehensive portfolio platform.
 
-## Available Scripts
+## 🚀 Project Overview
 
-In the project directory, you can run:
+This portfolio website serves as a professional showcase for Jake Hyunoh Kwon, a versatile Software Engineer with expertise in Full Stack development, including Frontend, Backend, DevOps, Data, and AI. The application is currently deployed and accessible at [https://kwohyuno.github.io/my-react-app](https://kwohyuno.github.io/my-react-app).
 
-### `npm start`
+## 🛠️ Technology Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Frontend
+- **React 18.3.1** - Modern JavaScript library for building user interfaces
+- **React Router DOM 7.0.2** - Client-side routing for single-page applications
+- **React Icons 5.4.0** - Icon library for React applications
+- **CSS3** - Styling and responsive design
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Backend
+- **Spring Boot 3.4.0** - Java-based framework for building web applications
+- **Java 17** - Programming language
+- **Gradle** - Build automation tool
+- **Lombok** - Java annotation processor for reducing boilerplate code
 
-### `npm test`
+### Development Tools
+- **Create React App** - React development environment
+- **GitHub Pages** - Static site hosting
+- **ESLint** - Code linting and formatting
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📁 Project Structure
 
-### `npm run build`
+```
+profile/
+├── src/
+│   ├── main/
+│   │   ├── java/com/example/kwohyuno/
+│   │   │   ├── KwohyunoApplication.java    # Spring Boot main application
+│   │   │   └── MainController.java         # REST controller for proxy routing
+│   │   └── frontend/                       # React application
+│   │       ├── src/
+│   │       │   ├── pages/                  # Page components
+│   │       │   │   ├── mainpage/           # Home page
+│   │       │   │   ├── career/             # Career experience
+│   │       │   │   ├── education/          # Educational background
+│   │       │   │   ├── project/            # Project showcase
+│   │       │   │   ├── study/              # Study materials
+│   │       │   │   ├── certificate/        # Certifications
+│   │       │   │   └── components/         # Reusable components
+│   │       │   │       └── Header.js       # Navigation header
+│   │       │   └── router/
+│   │       │       └── RouteMain.js        # Application routing
+│   │       └── public/                     # Static assets
+│   └── resources/                          # Static resources
+├── build.gradle                           # Gradle build configuration
+├── package.json                           # Node.js dependencies
+└── README.md                             # This file
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🎯 Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Core Sections
+1. **Home Page** - Personal introduction and overview
+2. **Career** - Professional work experience and achievements
+3. **Education** - Academic background and qualifications
+4. **Projects** - Portfolio of technical projects
+5. **Study** - Learning materials and resources
+6. **Certificates** - Professional certifications and achievements
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Key Features
+- **Responsive Design** - Optimized for desktop and mobile devices
+- **Modern UI/UX** - Clean, professional interface with smooth navigation
+- **Social Media Integration** - Links to GitHub, LinkedIn, and personal blog
+- **Modal Interactions** - Interactive elements for detailed information display
+- **Proxy Routing** - Spring Boot backend serves React frontend seamlessly
 
-### `npm run eject`
+## 🚀 Getting Started
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Prerequisites
+- **Java 17** or higher
+- **Node.js** (for React development)
+- **npm** or **yarn** package manager
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/kwohyuno/profile.git
+   cd profile
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. **Install frontend dependencies**
+   ```bash
+   npm install
+   ```
 
-## Learn More
+3. **Start the development servers**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   **Frontend (React)**
+   ```bash
+   npm start
+   ```
+   The React app will run on [http://localhost:3000](http://localhost:3000)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   **Backend (Spring Boot)**
+   ```bash
+   ./gradlew bootRun
+   ```
+   The Spring Boot app will run on [http://localhost:8080](http://localhost:8080)
 
-### Code Splitting
+### Development Scripts
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- `npm start` - Start React development server
+- `npm run build` - Build React app for production
+- `npm test` - Run React tests
+- `./gradlew bootRun` - Start Spring Boot application
+- `./gradlew build` - Build Spring Boot application
+- `npm run deploy` - Deploy to GitHub Pages
 
-### Analyzing the Bundle Size
+## 🏗️ Architecture
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Frontend Architecture
+The React application follows a component-based architecture with:
+- **Page Components** - Main sections of the portfolio
+- **Reusable Components** - Shared UI elements like Header
+- **Router Configuration** - Client-side routing with React Router
+- **CSS Modules** - Scoped styling for each component
 
-### Making a Progressive Web App
+### Backend Architecture
+The Spring Boot application provides:
+- **Proxy Controller** - Routes all requests to the React frontend
+- **REST API** - Backend services (currently minimal)
+- **Static Resource Serving** - Serves the built React application
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🎨 Design & Styling
 
-### Advanced Configuration
+The portfolio features a modern, professional design with:
+- **Clean Typography** - Professional font choices and hierarchy
+- **Responsive Layout** - Mobile-first design approach
+- **Interactive Elements** - Hover effects and smooth transitions
+- **Social Media Integration** - Prominent links to professional profiles
+- **Modal Dialogs** - Detailed information display without page navigation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📱 Responsive Design
 
-### Deployment
+The application is fully responsive and optimized for:
+- **Desktop** - Full-featured experience with detailed layouts
+- **Tablet** - Adapted layouts for medium screens
+- **Mobile** - Touch-friendly interface with simplified navigation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🚀 Deployment
 
-### `npm run build` fails to minify
+The application is deployed using GitHub Pages:
+- **Production Build** - Optimized React build served by GitHub Pages
+- **Custom Domain** - Professional domain configuration
+- **HTTPS** - Secure connection with SSL certificate
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🤝 Contributing
+
+This is a personal portfolio project. For questions or suggestions, please contact Jake Hyunoh Kwon through the social media links provided in the application.
+
+## 📄 License
+
+This project is for personal use and portfolio demonstration purposes.
+
+## 👤 About the Developer
+
+**Jake Hyunoh Kwon** is a versatile Software Engineer with expertise in:
+- Full Stack Development (Frontend, Backend, DevOps)
+- Data Engineering and AI/ML
+- Cloud Computing (AWS)
+- Software Engineering and Computer Science
+
+Currently studying at the University of San Francisco, focusing on AI and Computer Science.
+
+---
+
+*"Let's Work Hard, Have Fun, and Make History!"* - Jake Hyunoh Kwon
